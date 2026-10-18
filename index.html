@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#ffe4ef">
-<title>A Little Birthday Surprise ♡</title>
+<meta name="theme-color" content="#d9f3df">
+<title>A Little Birthday Surprise 🍃</title>
 <style>
-  :root { --pink:#ff6fa8; --deep:#b93d75; --pale:#fff3f8; --ink:#63394d; }
+  :root { --pink:#55a96b; --deep:#236b3b; --pale:#f1fbf2; --ink:#294b34; }
   * { box-sizing:border-box; }
   body {
     margin:0; min-height:100vh; color:var(--ink);
     font-family: ui-rounded, "Trebuchet MS", system-ui, sans-serif;
     background:radial-gradient(circle at top left,#fff 0,transparent 35%),
-      linear-gradient(135deg,#ffe8f1,#fff5fa 48%,#ffd9e9);
+      linear-gradient(135deg,#e0f5e5,#f5fff5 48%,#c8ebd0);
     overflow-x:hidden;
   }
   .sparkles { position:fixed; inset:0; pointer-events:none; overflow:hidden; z-index:0; }
@@ -21,39 +21,39 @@
   main { position:relative; z-index:1; width:min(720px,100%); margin:auto; padding:28px 18px 50px; }
   .card {
     background:rgba(255,255,255,.78); border:1px solid rgba(255,255,255,.95);
-    box-shadow:0 18px 55px rgba(186,75,123,.13); border-radius:28px;
+    box-shadow:0 18px 55px rgba(48,112,62,.14); border-radius:28px;
     padding:clamp(22px,6vw,42px); text-align:center; margin:14px 0;
     backdrop-filter:blur(8px);
   }
-  .eyebrow { letter-spacing:.16em; text-transform:uppercase; font-size:.72rem; color:#c45c8a; font-weight:800; }
+  .eyebrow { letter-spacing:.16em; text-transform:uppercase; font-size:.72rem; color:#4f9860; font-weight:800; }
   h1 { color:var(--deep); font-size:clamp(2.1rem,9vw,4rem); line-height:1.02; margin:15px 0; }
   h2 { color:var(--deep); font-size:clamp(1.5rem,6vw,2rem); margin:0 0 14px; }
   p { line-height:1.75; }
-  .cake { font-size:5rem; filter:drop-shadow(0 7px 7px #f5b3ce); margin:12px 0; }
+  .cake { font-size:5rem; filter:drop-shadow(0 7px 7px #b8dfc0); margin:12px 0; }
   .subtitle { max-width:480px; margin:0 auto 22px; }
   button {
     border:0; cursor:pointer; border-radius:999px; padding:14px 22px;
-    background:linear-gradient(135deg,#ff83b4,#ee5595); color:white;
-    font-size:1rem; font-weight:800; box-shadow:0 8px 20px #ed8ab6a6;
+    background:linear-gradient(135deg,#68bb7b,#32864a); color:white;
+    font-size:1rem; font-weight:800; box-shadow:0 8px 20px #7fbe8b80;
     transition:transform .2s, box-shadow .2s;
   }
-  button:hover { transform:translateY(-2px); box-shadow:0 12px 25px #ed8ab6b5; }
-  button:focus-visible { outline:3px solid #a8346c; outline-offset:3px; }
-  .secondary { background:#ffe0ed; color:#a4386b; box-shadow:none; }
+  button:hover { transform:translateY(-2px); box-shadow:0 12px 25px #6db57d80; }
+  button:focus-visible { outline:3px solid #236b3b; outline-offset:3px; }
+  .secondary { background:#d9f0de; color:#236b3b; box-shadow:none; }
   .hidden { display:none !important; }
-  .letter { text-align:left; background:#fff8fb; border:1px dashed #f1a4c4; border-radius:20px; padding:22px; }
+  .letter { text-align:left; background:#f8fff9; border:1px dashed #91c99b; border-radius:20px; padding:22px; }
   .letter p { margin:0 0 13px; }
   .reasons { display:grid; grid-template-columns:1fr; gap:12px; margin-top:18px; text-align:left; }
-  .reason { background:#fff4f8; border:1px solid #ffe0ed; padding:14px 16px; border-radius:16px; }
-  .reason b { color:#b84278; }
+  .reason { background:#f0faf2; border:1px solid #d2edd7; padding:14px 16px; border-radius:16px; }
+  .reason b { color:#287542; }
   .music-box { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:12px; margin-top:18px; }
   .music-note { font-size:1.7rem; animation:bob 1.2s ease-in-out infinite alternate; }
   @keyframes bob { to { transform:translateY(-5px) rotate(8deg); } }
   .small { font-size:.86rem; opacity:.78; }
-  .footer { text-align:center; font-size:.85rem; padding:12px; color:#a34b76; }
+  .footer { text-align:center; font-size:.85rem; padding:12px; color:#477c51; }
   .confetti { position:fixed; z-index:5; top:-20px; pointer-events:none; animation:fall 3.2s linear forwards; }
   @keyframes fall { to { transform:translateY(110vh) rotate(720deg); opacity:.1; } }
-  .signature { color:#b84278; font-weight:800; }
+  .signature { color:#287542; font-weight:800; }
   @media (min-width:560px) { .reasons { grid-template-columns:1fr 1fr; } }
   @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms !important; transition-duration:.01ms !important; } }
 </style>
@@ -68,47 +68,47 @@
 </div>
 <main>
   <section class="card" id="welcome">
-    <div class="eyebrow">a tiny website made with love</div>
+    <div class="eyebrow">a little birthday page for a friend</div>
     <div class="cake" aria-hidden="true">🎂</div>
-    <p>To my favourite human ♡</p>
-    <h1>Happy Birthday,<br><span id="friendNameTitle">Bestie</span>!</h1>
-    <p class="subtitle">Today is all about you, so I made you a little corner of the internet filled with love, smiles, and pink things. You deserve the sweetest day ever. 💗</p>
-    <button id="surpriseBtn">Open your surprise ♡</button>
-    <p class="small">Psst… turn your sound on if you'd like a little tune.</p>
+    <p>For a really good friend 🍃</p>
+    <h1>Happy Birthday,<br><span id="friendNameTitle">Veit</span>!</h1>
+    <p class="subtitle">Today is your day, so I made you a little corner of the internet with green vibes, good wishes, and a few smiles. Hope you have a genuinely great birthday! 🍀</p>
+    <button id="surpriseBtn">Open your surprise 🍃</button>
+    <p class="small">Psst… turn your sound on if you want to hear a tiny birthday tune.</p>
   </section>
 
   <div id="surprise" class="hidden">
     <section class="card">
-      <div class="eyebrow">a letter just for you</div>
-      <h2>Dear <span id="friendNameLetter">Bestie</span>, 💌</h2>
+      <div class="eyebrow">a birthday note for you</div>
+      <h2>Dear <span id="friendNameLetter">Veit</span>, 💌</h2>
       <div class="letter">
-        <p>Happy birthday to one of the most special people in my life! ♡</p>
-        <p>I hope this new chapter brings you the kind of happiness that stays, the kind of love that feels safe, and so many little moments that make you smile for no reason.</p>
-        <p>Thank you for being you — for the laughs, the memories, and all the little things that make our friendship feel special. I might not say it all the time, but I'm genuinely grateful to have you in my life.</p>
-        <p>Whatever this year brings, I hope you always remember how loved, valued, and wonderful you are. Keep being your lovely self, chase the things that make you happy, and never forget that you deserve good things. 🩷</p>
-        <p>Here's to more memories, more laughter, and more stories we'll talk about forever.</p>
-        <p class="signature">Love you loads, bestie. Happy birthday! 🎀</p>
+        <p>Happy birthday, buddy! Hope you have an awesome day. 🎉</p>
+        <p>I hope the year ahead brings you good health, plenty of laughs, new experiences, and lots of reasons to feel proud of yourself.</p>
+        <p>Thanks for the conversations, the jokes, and the memories. I’m glad we became friends, and I hope we get to make plenty more fun memories along the way.</p>
+        <p>Whatever this year brings, keep being yourself, keep working towards what matters to you, and remember to enjoy the little things too. Wishing you good luck with everything you take on. 🍀</p>
+        <p>Here’s to more laughs, more games, and more good memories as friends.</p>
+        <p class="signature">Have a great birthday and an even better year ahead! 🌿</p>
       </div>
     </section>
 
     <section class="card">
       <div class="eyebrow">little reminders</div>
-      <h2>Reasons you're so special ♡</h2>
-      <p>Just in case you ever forget…</p>
+      <h2>A few things I appreciate</h2>
+      <p>A few friendly reminders 🍃</p>
       <div class="reasons">
-        <div class="reason">🌷 <b>Your heart</b><br>You care in ways that matter.</div>
-        <div class="reason">☀️ <b>Your energy</b><br>You make ordinary moments brighter.</div>
-        <div class="reason">🎀 <b>Being yourself</b><br>There's nobody quite like you.</div>
-        <div class="reason">🫶 <b>Our friendship</b><br>The memories we make mean so much.</div>
-        <div class="reason">✨ <b>Your strength</b><br>You keep going, even on hard days.</div>
-        <div class="reason">💗 <b>Simply you</b><br>You don't have to do anything to be loved.</div>
+        <div class="reason">🌱 <b>Your kindness</b><br>Small thoughtful things can mean a lot.</div>
+        <div class="reason">☀️ <b>Your humour</b><br>You know how to make a chat fun.</div>
+        <div class="reason">🍀 <b>Being yourself</b><br>Keep your own style and stay genuine.</div>
+        <div class="reason">🤝 <b>Our friendship</b><br>Glad we get to share some good memories.</div>
+        <div class="reason">✨ <b>Your effort</b><br>Keep showing up for the things you care about.</div>
+        <div class="reason">🌿 <b>Your potential</b><br>There are plenty of good things ahead of you.</div>
       </div>
     </section>
 
     <section class="card">
-      <div class="eyebrow">a little birthday soundtrack</div>
+      <div class="eyebrow">a tiny birthday soundtrack</div>
       <h2>Press play 🎶</h2>
-      <p>This little tune is generated by your browser, so there's no extra audio file to upload.</p>
+      <p>This tiny tune is made by your browser, so there’s no extra audio file to upload.</p>
       <div class="music-box">
         <span class="music-note" aria-hidden="true">♫</span>
         <button id="musicBtn" class="secondary">Play birthday tune ▶</button>
@@ -118,16 +118,16 @@
     </section>
     <section class="card">
       <div class="cake" aria-hidden="true">🧁</div>
-      <h2>One last wish…</h2>
-      <p>May your year be soft, bright, full of surprises, and surrounded by people who make you feel loved. Don't ever forget how special you are. 💞</p>
-      <button class="secondary" id="againBtn">Make it sparkle again ✨</button>
+      <h2>One last birthday wish…</h2>
+      <p>Hope your year is full of good health, success, peaceful days, and people who bring out the best in you. Have fun today and enjoy your birthday! 🌳</p>
+      <button class="secondary" id="againBtn">Celebrate again 🎉</button>
     </section>
   </div>
-  <div class="footer">made with ♡, just for you · birthday edition</div>
+  <div class="footer">made with care · a little birthday surprise 🌿</div>
 </main>
 <script>
-  // PERSONALIZE HERE: replace "Bestie" with your friend's name.
-  const FRIEND_NAME = "Bestie";
+  // PERSONALIZE HERE: replace the name with your friend's name.
+  const FRIEND_NAME = "Veit";
   document.title = `Happy Birthday, ${FRIEND_NAME}! ♡`;
   document.getElementById("friendNameTitle").textContent = FRIEND_NAME;
   document.getElementById("friendNameLetter").textContent = FRIEND_NAME;
@@ -135,14 +135,14 @@
   const surprise = document.getElementById("surprise");
   document.getElementById("surpriseBtn").addEventListener("click", () => {
     surprise.classList.remove("hidden");
-    document.getElementById("surpriseBtn").textContent = "Surprise opened! ♡";
+    document.getElementById("surpriseBtn").textContent = "Surprise opened! 🍃";
     confetti();
     surprise.scrollIntoView({behavior:"smooth", block:"start"});
   });
   document.getElementById("againBtn").addEventListener("click", confetti);
 
   function confetti() {
-    const symbols = ["💗","💕","♡","✦","🎀","✨","🌸"];
+    const symbols = ["🍃","🌿","☘️","✦","✨","🌱","🎉"];
     for (let i=0; i<32; i++) {
       const el = document.createElement("span");
       el.className = "confetti";
@@ -176,7 +176,7 @@
     audioCtx = new AudioContext();
     playing = true;
     document.getElementById("musicBtn").textContent = "Stop tune ■";
-    document.getElementById("musicStatus").textContent = "A little melody, just for you ♡";
+    document.getElementById("musicStatus").textContent = "A little birthday melody 🍃";
     notes.forEach((freq, i) => {
       timers.push(setTimeout(() => {
         if (!playing || !audioCtx) return;
@@ -196,7 +196,7 @@
         if (audioCtx) audioCtx.close();
         audioCtx = null;
         document.getElementById("musicBtn").textContent = "Play birthday tune ▶";
-        document.getElementById("musicStatus").textContent = "Tune finished — play it again if you want ♡";
+        document.getElementById("musicStatus").textContent = "Tune finished — play it again if you want 🍃";
       }
     }, notes.length * 360 + 400));
   }
